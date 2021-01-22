@@ -1,0 +1,10 @@
+@import './__block/searchTown__block.scss';
+@import './__select/searchTown__select.scss';
+
+.searchTown {
+  display: block;
+  .searchTown__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
