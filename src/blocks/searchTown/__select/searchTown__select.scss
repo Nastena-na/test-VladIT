@@ -7,12 +7,15 @@
   display: none;
   &_active {
     width: 500px;
+    height: 400px;
     padding: 5px 10px;
     display: flex;
     flex-direction: column;
     margin: auto;
     border-radius: 10px;
     outline: none;
+    background-color: #fff;
+    overflow: auto;
   }
 
   @media (max-width: 768px) {
@@ -26,5 +29,11 @@
     font-size: 15px;
     color: #1a1b22;
     height: 20px;
+    list-style-type: none;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    &:hover {
+      background-color: coral;
+    }
   }
 }

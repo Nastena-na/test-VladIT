@@ -5,7 +5,7 @@ export default class Town {
   }
 
   _template() {
-    const templateString = `<option class="searchTown__option"></option>`;
+    const templateString = `<li class="searchTown__option"></li>`;
     const element = document.createElement('div');
     element.insertAdjacentHTML('beforeend', templateString.trim());
     return element.firstChild;
@@ -13,8 +13,8 @@ export default class Town {
 
   create() {
     this._town = this._template();
-    this._town.setAttribute('value', `${this.data}`);
-    this._town.textContent = this.data;
+    this._town.innerHTML = `${this.data.name}`;
+    this._town.setAttribute('data-value', `${this.data.name}`);
     return this._town;
   }
 }

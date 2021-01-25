@@ -10,9 +10,8 @@ export default class TownList {
   }
 
   render(towns) {
-    towns.forEach((town) => {
-      //каждая строчка с названием города из массива добавляется в контейнер
-      this._addCard(town);
-    });
+    for (let i = 1; i < towns.length; i++) {
+      this._addCard(towns[i]);
+    }
   }
 }
